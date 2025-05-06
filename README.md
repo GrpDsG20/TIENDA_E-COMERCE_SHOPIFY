@@ -8,7 +8,7 @@ CARRITO DE COMPRAS
 
 ![Image](https://github.com/user-attachments/assets/88aec6ab-6145-497f-b116-25275f42b271)
 
-ROL: ADMINISTRADOR
+ROL: ADMINISTRADOR dashboard.php
 
 ![Image](https://github.com/user-attachments/assets/5bad6bd7-054a-48c7-9a0a-ce5485ddfda9)
 
@@ -21,3 +21,10 @@ RESPONSIVE
 ![Image](https://github.com/user-attachments/assets/19ad4941-c504-4e9f-a5e6-c043255ce67c)
 
 ![Image](https://github.com/user-attachments/assets/dd8b2591-7885-4b5b-a2a2-5b36b3a1b3c1)
+
+PASS: 
+admi
+q@Maeve@@#1saas
+
+ventas
+q@Maeve@@#1saas
