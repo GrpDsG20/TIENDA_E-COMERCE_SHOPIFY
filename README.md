@@ -1,5 +1,4 @@
 TIENDA E-COMERCE ESTILO SHOPIFY COMPLETA
-ROLES : ADMIN VENTAS
 
 ![Image](https://github.com/user-attachments/assets/7f743c2a-1d69-4fb5-a81a-56c2e1b671fb)
 
