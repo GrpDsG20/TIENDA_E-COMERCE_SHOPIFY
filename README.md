@@ -4,6 +4,8 @@ TIENDA E-COMERCE ESTILO SHOPIFY COMPLETA
 
 ![Image](https://github.com/user-attachments/assets/049e975e-3cc1-4510-abbc-c381f0c90b4f)
 
+CARRITO DE COMPRAS
+
 ![Image](https://github.com/user-attachments/assets/88aec6ab-6145-497f-b116-25275f42b271)
 
 ![Image](https://github.com/user-attachments/assets/5bad6bd7-054a-48c7-9a0a-ce5485ddfda9)
