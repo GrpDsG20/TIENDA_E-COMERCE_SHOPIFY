@@ -1,0 +1,184 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-categorias {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 85%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.seccion {
+    width: 47%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.seccion h2 {
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-category button {
+    background-color: #FF6F00;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+}
+
+.form-category button:hover {
+    background-color: #e65c00;
+
+}
+
+.form-category input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #9a8c98;
+    box-shadow: 0px 0px 8px rgba(154, 140, 152, 0.3);
+}
+
+
+
+.seccion ul {
+
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    list-style-type: none;
+
+}
+
+.seccion li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icons-buttons svg {
+    width: 24px;
+    height: 24px;
+    fill: #000;
+    transition: background-color 0.3s;
+
+}
+
+.icons-buttons .edit svg {
+    width: 32px;
+    height: 32px;
+    fill: #000;
+
+}
+
+.edit,
+.delete {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 1400px) {
+
+    .contenedor-categorias {
+        width: 95%;
+
+    }
+}
+
+@media (max-width: 1030px) {
+    .contenedor-categorias {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .seccion {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .seccion h2 {
+
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .form-category input,
+    .form-category button,
+    .seccion li {
+
+
+        font-size: 0.8rem;
+    }
+
+    .icons-buttons svg {
+        width: 20px;
+        height: 20px;
+
+
+    }
+
+    .icons-buttons .edit svg {
+        width: 28px;
+        height: 28px;
+
+    }
+}
+
+.volver-dashboard {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.volver-dashboard a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.volver-dashboard svg {
+    width: 24px;
+    height: 24px;
+}

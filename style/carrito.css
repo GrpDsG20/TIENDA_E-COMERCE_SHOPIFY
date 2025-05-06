@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Raleway:wght@700&display=swap');
+
+
+#panelDatosCliente {
+    display: none;
+
+}
+
+.panel-datos-cliente {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vh;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -8px 0 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    transition: right 0.3s ease-in-out;
+    z-index: 999999;
+    overflow-y: auto;
+}
+
+.panel-datos-cliente h2 {
+    padding-bottom: 35px;
+    font-size: 1.5rem;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}   
+
+.cerrar-datos-cliente {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    color: black !important;
+}
+
+#formDatosCliente {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+
+.btn-enviar,
+.btn-cancelar {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn-cancelar {
+    background-color: #FF6F00;
+}
+
+.btn-enviar {
+    margin-top: 10px;
+}
+
+
+
+.btn-cancelar:hover {
+    background-color: #e65c00;
+}
+
+
+#formDatosCliente select,
+#formDatosCliente input {
+    padding: 10px 15px;
+    border-radius: 8px;
+
+    border: 1px solid #ddd;
+    font-size: 1rem;
+
+    outline: none;
+
+
+}
+
+
+@media (max-width: 1400px) {
+    .panel-datos-cliente {
+        width: 70vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .panel-datos-cliente {
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+
+    #formDatosCliente select,
+    #formDatosCliente input {
+
+        font-size: 0.9rem;
+
+
+
+
+    }
+}
+
+.carrito {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(145deg, #FF6F00, #D65A00);
+    justify-content: center;
+}
+
+.contador {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: radial-gradient(circle, #FF0000, #B80000);
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-weight: bold;
+}
+
+
+.panel-carrito {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50vh;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -8px 0 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    transition: right 0.3s ease-in-out;
+    z-index: 99999;
+    overflow-y: auto;
+}
+
+.panel-carrito h2 {
+    padding-bottom: 35px;
+    font-size: 1.5rem;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.panel-carrito h2 svg {
+    margin-right: 10px;
+}
+
+.cerrar-carrito {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    color: black !important;
+}
+
+#listaCarrito {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.img-carrito {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.info-producto {
+    flex-grow: 1;
+    padding: 0 20px 0 0;
+}
+
+.nombre-producto {
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.precios {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.precio-producto {
+    font-size: 0.8rem;
+    color: #FF6F00;
+    margin-bottom: 0;
+}
+
+.precio-original {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+
+}
+
+.cantidad {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-eliminar {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.resumen-carrito {
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    padding: 20px 10px 10px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.gratis {
+    color: green;
+    font-weight: bold;
+}
+
+.total {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nota {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.btn-comprar {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-limpiar {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF6F00;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-limpiar:hover {
+    background-color: #e65c00;
+}
+
+
+@media (max-width: 1400px) {
+    .panel-carrito {
+        width: 70vh;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .panel-carrito {
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    .nombre-producto {
+        font-size: 0.8rem;
+    }
+
+    .total {
+        font-size: 0.9rem;
+    }
+
+    .nota {
+        font-size: 0.8rem;
+
+    }
+
+    .panel-carrito svg {
+        width: 20px;
+        height: 20px;
+    }
+
+
+}
+
+#loading-overlay {
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 1000;
+
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+
+    border-top: 8px solid #007bff;
+
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.texto-carga {
+    margin-top: 16px;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Raleway:wght@700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.catalog-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 90px 20px 10px 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.filters-container h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+
+.filters-container {
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+
+.filter-labels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: left;
+    font-weight: 300;
+    padding: 10px;
+}
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.filter-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+.filter-item-m {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#category-filter,
+#popularity-filter {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-items: flex-start;
+    outline: none;
+}
+
+
+#price-slider {
+    width: 90%;
+    padding: 8px;
+}
+
+
+.filters select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+@media (max-width: 1400px) {
+    .catalog-section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .filters-container {
+        width: 90%;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-item,
+    .filter-item-m {
+        width: 100%;
+        align-items: center;
+    }
+
+    #category-filter,
+    #popularity-filter {
+        max-width: 90%;
+    }
+
+    .filter-labels {
+        display: none;
+    }
+
+    #price-slider {
+        width: 80%;
+    }
+
+    .filters-container {
+        margin: auto;
+    }
+
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: 20px auto;
+    gap: 15px;
+    padding: 20px;
+
+}
+
+.producto {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.producto .nombre {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000;
+    white-space: normal;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 15px 5px 0 5px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.precio {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FF6F00;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.precio s {
+    font-size: 0.8rem;
+    color: #888;
+    margin-left: 5px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.descuento {
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: bold;
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.agregar-carrito {
+    background-color: #FF6F00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s;
+}
+
+.agregar-carrito:hover {
+    background-color: #e65c00;
+}
+
+
+@media (max-width: 1400px) {
+    .productos {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 0;
+        gap: 5px;
+
+    }
+
+    .producto {
+        border-radius: 0;
+        padding: 10px 0;
+    }
+
+    .producto img {
+        width: 90%;
+    }
+
+    .agregar-carrito {
+        width: 90%;
+    }
+
+    .filters-container h3 {
+        text-align: center;
+
+    }
+}

@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.contenedor-tabla {
+    width: 95%;
+    overflow-x: auto;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contenedor-tabla h1 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filtros input,
+.filtros select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse !important;
+    /* Fusiona los bordes */
+    border: 1px solid #ddd !important;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd !important;
+}
+
+th {
+    background-color: #FF6F00 !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9 !important;
+}
+
+
+.producto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.cantidades {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.precios {
+    margin-bottom: 10px;
+}
+
+.producto img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.estado {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+
+}
+
+.estado.cancelado {
+    background-color: #dc3545;
+}
+
+.estado.resuelto {
+    background-color: #28a745;
+}
+
+.estado.en-proceso {
+    background-color: #ffc107;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.paginacion a {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.paginacion a.activa {
+    background-color: #FF6F00;
+    color: white;
+    border-color: #FF6F00;
+}
