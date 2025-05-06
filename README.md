@@ -16,6 +16,8 @@ ROL: VENTAS
 
 ![Image](https://github.com/user-attachments/assets/99764b40-4cad-40d9-a71e-96f31d932a20)
 
+RESPONSIVE
+
 ![Image](https://github.com/user-attachments/assets/19ad4941-c504-4e9f-a5e6-c043255ce67c)
 
 ![Image](https://github.com/user-attachments/assets/dd8b2591-7885-4b5b-a2a2-5b36b3a1b3c1)
