@@ -8,7 +8,11 @@ CARRITO DE COMPRAS
 
 ![Image](https://github.com/user-attachments/assets/88aec6ab-6145-497f-b116-25275f42b271)
 
+ROL: ADMINISTRADOR
+
 ![Image](https://github.com/user-attachments/assets/5bad6bd7-054a-48c7-9a0a-ce5485ddfda9)
+
+ROL: VENTAS
 
 ![Image](https://github.com/user-attachments/assets/99764b40-4cad-40d9-a71e-96f31d932a20)
 
